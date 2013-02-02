@@ -1,0 +1,29 @@
+
+/* reset default margin */
+body {
+  margin: 0px;
+}
+
+img {
+  height: auto;
+}
+
+
+.image-wrapper {
+  float: left;
+  margin-right: 20px;
+}
+
+#viewport {
+  margin: 100px;
+  overflow: hidden;
+}
+
+/* Width just needs to be larger than sum of pictures. TODO: set in JS */
+#container {
+  width: 10000px;
+  -webkit-transition:all 0.4s ease-in-out;
+  -moz-transition:all 0.4s ease-in-out;
+  -o-transition:all 0.4s ease-in-out;
+  transition:all 0.4s ease-in-out;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="style.css" media="all" rel="stylesheet" type="text/css" />
+  <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+  <script src="underscore.js" type="text/javascript"></script>
+  <script src="backbone.js" type="text/javascript"></script>
+
+  <script id="imageTemplate" type="text/template">
+     <img src="<%= path %>"></img>
+  </script>
+
+  <script src="app.js" type="text/javascript"></script>
+
+</head>
+<body>
+  <div id="viewport">
+    <div id="container"></div>
+  </div>
+
+  <script>
+    var imageNames = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', ];
+
+    var imagePaths = _.map(imageNames, function(name) {
+      return 'images/' + name;
+    });
+    var lightBox = new App.LightBox(imagePaths);
+  </script>
+</body>
